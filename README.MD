@@ -26,14 +26,20 @@
 ### 环境安装，请参考
 
 https://goframe.org/pages/viewpage.action?pageId=1114397
+
+
 ### 后台server：
 ### 下载代码&安装依赖
+
+
 ```shell
 #克隆仓库
 git clone https://gitee.com/jasonlaw1015/goEasy.git
 #或者
 git clone https://github.com/jasonLaw1015/goEasy.git
 ```
+
+
 打开mysql=》创建go-easy库=》
 运行db/go-easy.sql；创建表结构和初始化数据
 
@@ -48,19 +54,27 @@ git clone https://github.com/jasonLaw1015/goEasy.git
 #格式化代码
 gofmt ./
 ```
+
+
 ```shell
 #安装更新相关依赖
 go mod tidy
 ```
+
+
 ```shell
 # 运行或者你点击GoLang IDE编辑器;
 # 运行安装过程完成后，运行以下命令启动服务。您可以在浏览器中预览网站 [http://localhost:8000](http://localhost:8000)
 go run main.go
 ```
+
+
 ![img_8.png](screenshot/img_8.png)
 
 ### 安装gf开发工具
 https://goframe.org/pages/viewpage.action?pageId=1115782
+
+
 
 #### 交叉编译
 运行已下命令，生成linux环境可执行文件
@@ -68,6 +82,7 @@ https://goframe.org/pages/viewpage.action?pageId=1115782
 gf build main.go -n my-app -v 1.0 -a amd64 -s linux -p ./
 ```
 会得到个my-app可执行文件
+
 
 #### 也可以配置gfcli.build
 在cofig.toml上配置
@@ -84,13 +99,20 @@ gf build main.go -n my-app -v 1.0 -a amd64 -s linux -p ./
         output   = "./bin"
         extra    = ""
 ```
+
+
 再运行
 ```shell
 gf build
 ```
+
 会生成所有平台的可执行文件,到./bin
 
+
+
 ![img100.png](screenshot/img100.png)
+
+
 
 **注：**
 一般选择amd64。你可以运行go env 查看到你本机是哪个，自己选择那个
@@ -99,18 +121,28 @@ darwin=>mac
 linux=>linux
 windows=>windows
 
+
+
 ## 后台前端Vue
+
+
 ***必须安装：
 操作系统上安装了 Node.js（> = 8.9.0）、@vue/cli
 ***
+
+
 ```shell
 npm install -g @vue/cli
 npm install -g yarn
 ```
+
 解决 `node-sass` 网络慢的方法：
+
 ```shell
 yarn config set sass-binary-site http://npm.taobao.org/mirrors/node-sass
 ```
+
+
 然后下载仓库
 ```shell
 #克隆仓库
@@ -118,6 +150,8 @@ git clone https://gitee.com/jasonlaw1015/goEasyAdmin.git
 #或者
 git clone https://github.com/jasonLaw1015/goEasyAdmin.git
 ```
+
+
 安装依赖
 ```shell
 #goEasyAdmin目录下,运行下面命令安装依赖
@@ -127,46 +161,70 @@ npm i
 ```
 
 安装过程完成后，运行以下命令启动服务。您可以在浏览器中预览网站 [http://localhost:8000](http://localhost:8000)
+
+
 ```shell
 yarn dev
 ```
+
+
 ```shell
 yarn dev
 #或者
 npm run dev
 ```
+
+
 格式化代码
 ```shell
 yarn lint
 ```
+
 打包构建
 ```shell
 #会在dist目录生成，此目录就是生产环境所运行的
 yarn build
 ```
+
 访问
 [http://localhost:8000](http://localhost:8000)
+
+
 ![img_9.png](screenshot/img_9.png)
+
 账号密码：admin/123456
 ![img_10.png](screenshot/img_10.png)
 
+
 ![img_11.png](screenshot/img_11.png)
 
+
 ![img_12.png](screenshot/img_12.png)
+
+
 ## 代码生成
 进入系统-》/核心工具/代码生成工具
 ![img_14.png](screenshot/img_14.png)
+
 然后按步骤123，配置相关参数
 步骤1：配置所需要环境参数
+
 ![img_15.png](screenshot/img_15.png)
+
+
 步骤2：检测下步骤1的数据是否可行
+
 ![img_16.png](screenshot/img_16.png)
+
+
 步骤3：开始生成代码
 ![img_17.png](screenshot/img_17.png)
+
 
 确认后：
 
 将在goEasy生成以下文件
+
 ```shell
 app/controller/Admin/DemoGo.go
 app/controller/Api/DemoGo.go
@@ -175,14 +233,18 @@ app/service/DemoGoService/DemoGo.go
 router/adminRouter.go
 router/apiRouter.go
 ```
+
+
 ![img_18.png](screenshot/img_18.png)
 
 将在goEasyAdmin生成，（前端生成代码都会在goEasyAdmin/src/cool/modules/genCode下）
+
 ```shell
 goEasyAdmin/src/cool/modules/genCode/dict/demoGo.ts
 goEasyAdmin/src/cool/modules/genCode/service/demoGo.ts
 goEasyAdmin/src/cool/modules/genCode/views/demoGo.vue
 ```
+
 ![img_19.png](screenshot/img_19.png)
 
 并自动生成权限和菜单加入前端路由，下图
@@ -190,11 +252,13 @@ goEasyAdmin/src/cool/modules/genCode/views/demoGo.vue
 ![img_20.png](screenshot/img_20.png)
 
 **注意：**
+
 生成的代码会在自动格式化代码。如果不行，那自己yarn lint:eslint、 gofmt；
 go不会热更新，请自己手动run一下
 
 
 # 二、基础知识
+
 ## 举例
 比如，建一个demo_go表；
 
@@ -233,11 +297,14 @@ CREATE TABLE `demo_go` (
 |... | ...|
 
 ### vue端：
+
 会判断字段，然后确认其使用哪个前端组件来处理该字段。
 
 如：el-input、el-input-number、el-radio-group、cl-upload-space-preview
 
+
 ## 2.1、定义表字段规则：
+
 ### 默认规则：
 
 1.设计数据字段，字段名必须是id;
@@ -258,11 +325,13 @@ types status
 **注意：**
 字典字段，必须在comment处写上对应字典键值对，而且必须在第一个#号后面。字段comment处理通过#处理的
 
+
 **如：`types` tinyint(4) NOT NULL COMMENT '类型#1:上架,2:下架',**
 
 `1:上架,2:下架` 会转化成 下图
 
 ![img_1.png](screenshot/img_1.png)
+
 
 
 在后台UI显示如下图：
@@ -273,9 +342,12 @@ types status
 6.排序字段： sort orderNum
 
 ### 指定规则：
+
 **有些数据库设计，有时我不想使用上述提供的字段名。为提高灵活性，特意提供了指定标识，
 只要在comment里加入对应标识，系统就会自动帮你处理成你想要的字段。**
+
 **这些标识要写在第二个#号后面。如：其他状态#1:已激活,2:未激活#IsDictColumn,IsSearchParams**
+
 
 |标识|描述|具体|
 |---------|-------------------|-----|
@@ -286,23 +358,34 @@ types status
 |IsPicColumn|该字段是图片类型，前端部分会使用el-input-number来处里该字段|![img_6.png](screenshot/img_6.png)|
 |IsNumberColumn|该字段是数值类型，前端部分会使用cl-upload-space-preview来处里该字段|![img_7.png](screenshot/img_7.png)|
 
+
+
 **特别提醒：尽量不要用type来做字段名，否则生成的go代码有可能会出问题。因为type是go语法的关键字。目前我是用types代替。其他go关键字也是如此**
 
 ## 2.2、定时任务的使用：
+
 新增定时任务逻辑
 在app/task文件夹下，新增方法即可
+
 ![img_21.png](screenshot/img_21.png)
 
+
 然后在后台=》任务管理/任务列表
+
 ![img_22.png](screenshot/img_22.png)
+
 
 在service就可以看到刚刚写的GoodsTask。
 
 只要在package Task下写方法都可以在这里选择使用
 
+
 # 三、采用技术的相关使用文档
+
+
 **GoFrame:**  https://goframe.org/pages/viewpage.action?pageId=1114203
 
 **cool-admin-vue:** https://www.cool-js.com/front/vue3-vite.html
 
 **ElementPlus:** https://element-plus.org/#/zh-CN/component/radio
+
