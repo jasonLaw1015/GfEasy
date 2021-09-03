@@ -1,0 +1,55 @@
+# HTTP Server.
+[server]
+	address        = ":8199"
+    serverRoot     = "public"
+    uploadServerRoot     = "public/resource/upload"
+	serverAgent    = "goEasy"
+	logPath        = "/tmp/log/goEasy/server"
+	nameToUriType  = 2
+	routeOverWrite = true
+    uploadPath     = "http://127.0.0.1:8199/"
+    taskActive     = true #是否开启定时任务
+
+[site]
+    OnlyOneLogin = false
+
+# Logger configurations.
+[logger]
+    path   = "/tmp/log/goEasy"
+    level  = "all"
+    stdout = true
+
+# Template view configurations.
+[viewer]
+    path        = "template"
+    defaultFile = "index.html"
+    delimiters  = ["${", "}"]
+
+# Database configurations.
+[database]
+    link  = "mysql:root:123456@tcp(127.0.0.1:3306)/go-easy"
+    debug = true
+    createdAt = "createTime"
+    updatedAt = "updateTime"
+    # 数据库日志对象配置
+    [database.logger]
+        Path   = "/tmp/log/goEasy/sql"
+        Level  = "all"
+        Stdout = true
+# Redis数据库配置
+[redis]
+    open = true #是否开启 true false；缓存使用
+    default = "127.0.0.1:6379,3"
+
+[jwt]
+    version = "1.0" # 版本号
+    expires = 720 #过期小时
+    sign = "test" # 秘钥rou
+
+# GF-CLI工具配置
+[gfcli]
+    # 自定义DAO生成配置(默认是读取database配置)
+    [[gfcli.gen.dao]]
+        link   = "mysql:root:12345678@tcp(127.0.0.1:3306)/test"
+        tables = "user"
+

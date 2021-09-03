@@ -1,0 +1,37 @@
+# HTTP Server.
+[server]
+	address        = ":8199"
+	serverRoot     = "public"
+	serverAgent    = "goEasy"
+	logPath        = "/tmp/log/goEasy/server"
+	nameToUriType  = 2
+	routeOverWrite = true
+
+# Logger configurations.
+[logger]
+    path   = "/tmp/log/goEasy"
+    level  = "all"
+    stdout = true
+
+# Template view configurations.
+[viewer]
+    path        = "template"
+    defaultFile = "index.html"
+
+# Database configurations.
+[database]
+    link  = "mysql:root:12345678@tcp(127.0.0.1:3306)/test"
+    debug = true
+    # 数据库日志对象配置
+    [database.logger]
+        Path   = "/tmp/log/goEasy/sql"
+        Level  = "all"
+        Stdout = true
+
+# GF-CLI工具配置
+[gfcli]
+    # 自定义DAO生成配置(默认是读取database配置)
+    [[gfcli.gen.dao]]
+        link   = "mysql:root:12345678@tcp(127.0.0.1:3306)/test"
+        tables = "user"
+
