@@ -66,7 +66,7 @@ type AddReqParams struct {
 	DbName                string `p:"dbName" v:"required#数据库名不能为空"`
 	DbType                string `p:"dbType" v:"required#数据库类型，如mysql/pgsql/mssql/sqlite/oracle，默认mysql不能为空"`
 	AdminGenPath          string `p:"adminGenPath" v:"required#生成代码前端目录不能为空"`
-	ServerGenPath         string `p:"ServerGenPath" v:"required#生成代码服务端目录不能为空"`
+	ServerGenPath         string `p:"serverGenPath" v:"required#生成代码服务端目录不能为空"`
 	DefaultCreatedAtLabel string `p:"defaultCreatedAtLabel" v:"required#默认的时间字段格式，如createTime不能为空"`
 	DefaultUpdatedAtLabel string `p:"defaultUpdatedAtLabel" v:"required#默认的时间字段格式，如updateTime不能为空"`
 	IgnoreTablePrefix     string `p:"ignoreTablePrefix" v:"required#忽略此前缀的表，逗号分隔不能为空"`
@@ -82,7 +82,7 @@ type UpdateReqParams struct {
 	DbName                string `p:"dbName" `
 	DbType                string `p:"dbType" `
 	AdminGenPath          string `p:"adminGenPath" `
-	ServerGenPath         string `p:"ServerGenPath" `
+	ServerGenPath         string `p:"serverGenPath" `
 	DefaultCreatedAtLabel string `p:"defaultCreatedAtLabel" `
 	DefaultUpdatedAtLabel string `p:"defaultUpdatedAtLabel" `
 	IgnoreTablePrefix     string `p:"ignoreTablePrefix" `
@@ -99,7 +99,7 @@ type SaveReqParams struct {
 	DbName                string `p:"dbName" v:"required#数据库名不能为空"`
 	DbType                string `p:"dbType" v:"required#数据库类型，如mysql/pgsql/mssql/sqlite/oracle，默认mysql不能为空"`
 	AdminGenPath          string `p:"adminGenPath" v:"required#生成代码前端目录不能为空"`
-	ServerGenPath         string `p:"ServerGenPath" v:"required#生成代码服务端目录不能为空"`
+	ServerGenPath         string `p:"serverGenPath" v:"required#生成代码服务端目录不能为空"`
 	DefaultCreatedAtLabel string `p:"defaultCreatedAtLabel" v:"required#默认的时间字段格式，如createTime不能为空"`
 	DefaultUpdatedAtLabel string `p:"defaultUpdatedAtLabel" v:"required#默认的时间字段格式，如updateTime不能为空"`
 	IgnoreTablePrefix     string `p:"ignoreTablePrefix" v:"required#忽略此前缀的表，逗号分隔不能为空"`
