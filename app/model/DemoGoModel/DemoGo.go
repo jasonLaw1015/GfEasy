@@ -18,7 +18,7 @@ type Entity struct {
 	Pic        string      `orm:"pic" json:"pic"`               // 商品主图
 	Types      int         `orm:"types" json:"types"`           // 类型#1:上架,2:下架
 	Status     int         `orm:"status" json:"status"`         // 状态#1:启用,2:禁用
-	Tupian     string      `orm:"tupian" json:"tupian"`         // 图片##isPicColumn
+	Tupian     string      `orm:"tupian" json:"tupian"`         // 图片##IsPicColumn
 	Other      int         `orm:"other" json:"other"`           // 其他状态#1:已激活,2:未激活#IsDictColumn,IsSearchParams
 	Sort       int         `orm:"sort" json:"sort"`             // 排序
 }

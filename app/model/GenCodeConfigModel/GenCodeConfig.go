@@ -20,7 +20,7 @@ type Entity struct {
 	DbName                string      `orm:"dbName" json:"dbName"`                               // 数据库名
 	DbType                string      `orm:"dbType" json:"dbType"`                               // 数据库类型，如mysql/pgsql/mssql/sqlite/oracle，默认mysql
 	AdminGenPath          string      `orm:"adminGenPath" json:"adminGenPath"`                   // 生成代码前端目录
-	ServerGenPath         string      `orm:"ServerGenPath" json:"ServerGenPath"`                 // 生成代码服务端目录
+	ServerGenPath         string      `orm:"serverGenPath" json:"serverGenPath"`                 // 生成代码服务端目录
 	DefaultCreatedAtLabel string      `orm:"defaultCreatedAtLabel" json:"defaultCreatedAtLabel"` // 默认的时间字段格式，如createTime
 	DefaultUpdatedAtLabel string      `orm:"defaultUpdatedAtLabel" json:"defaultUpdatedAtLabel"` // 默认的时间字段格式，如updateTime
 	IgnoreTablePrefix     string      `orm:"ignoreTablePrefix" json:"ignoreTablePrefix"`         // 忽略此前缀的表，逗号分隔

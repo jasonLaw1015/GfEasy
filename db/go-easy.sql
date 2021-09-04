@@ -7,7 +7,7 @@
 #
 # Host: 127.0.0.1 (MySQL 5.7.31)
 # Database: go-easy
-# Generation Time: 2021-09-03 13:35:09 +0000
+# Generation Time: 2021-09-04 03:52:22 +0000
 # ************************************************************
 
 
@@ -1458,7 +1458,47 @@ VALUES
 	(8149,'2021-09-02 16:34:02.000000','2021-09-02 16:34:02.000000',1,'/admin/taskInfo/page','127.0.0.1','127.0.0.1:51657','{\"types\":null,\"status\":2,\"size\":10,\"page\":1,\"total\":0}'),
 	(8150,'2021-09-02 16:34:02.000000','2021-09-02 16:34:02.000000',1,'/admin/taskInfo/page','127.0.0.1','127.0.0.1:51653','{\"types\":1,\"status\":1,\"size\":10,\"page\":1,\"total\":0}'),
 	(8151,'2021-09-02 16:34:02.000000','2021-09-02 16:34:02.000000',1,'/admin/taskInfo/log','127.0.0.1','127.0.0.1:51659','{\"page\":\"1\",\"size\":\"10\"}'),
-	(8152,'2021-09-02 16:34:02.000000','2021-09-02 16:34:02.000000',1,'/admin/taskInfo/log','127.0.0.1','127.0.0.1:51665','{\"page\":\"2\",\"size\":\"10\",\"total\":\"737\"}');
+	(8152,'2021-09-02 16:34:02.000000','2021-09-02 16:34:02.000000',1,'/admin/taskInfo/log','127.0.0.1','127.0.0.1:51665','{\"page\":\"2\",\"size\":\"10\",\"total\":\"737\"}'),
+	(8153,'2021-09-04 11:38:29.000000','2021-09-04 11:38:29.000000',1,'/admin/baseComm/person','127.0.0.1','127.0.0.1:51386',NULL),
+	(8154,'2021-09-04 11:38:29.000000','2021-09-04 11:38:29.000000',1,'/admin/baseComm/permmenu','127.0.0.1','127.0.0.1:51390',NULL),
+	(8155,'2021-09-04 11:38:37.000000','2021-09-04 11:38:37.000000',1,'/admin/genCodeLog/page','127.0.0.1','127.0.0.1:51438','{\"page\":1,\"size\":20}'),
+	(8156,'2021-09-04 11:38:39.000000','2021-09-04 11:38:39.000000',1,'/admin/appGoodsInfo/page','127.0.0.1','127.0.0.1:51449','{\"page\":1,\"size\":20}'),
+	(8157,'2021-09-04 11:38:40.000000','2021-09-04 11:38:40.000000',1,'/admin/demoGo/page','127.0.0.1','127.0.0.1:51458','{\"page\":1,\"size\":20}'),
+	(8158,'2021-09-04 11:38:42.000000','2021-09-04 11:38:42.000000',1,'/admin/appGoodsInfo/page','127.0.0.1','127.0.0.1:51465','{\"page\":1,\"size\":20}'),
+	(8159,'2021-09-04 11:38:42.000000','2021-09-04 11:38:42.000000',1,'/admin/genCodeLog/page','127.0.0.1','127.0.0.1:51473','{\"page\":1,\"size\":20}'),
+	(8160,'2021-09-04 11:38:45.000000','2021-09-04 11:38:45.000000',1,'/admin/taskInfo/getTaskScheduleMethods','127.0.0.1','127.0.0.1:51484',NULL),
+	(8161,'2021-09-04 11:38:45.000000','2021-09-04 11:38:45.000000',1,'/admin/taskInfo/log','127.0.0.1','127.0.0.1:51499','{\"page\":\"1\",\"size\":\"10\"}'),
+	(8162,'2021-09-04 11:38:45.000000','2021-09-04 11:38:45.000000',1,'/admin/taskInfo/page','127.0.0.1','127.0.0.1:51495','{\"types\":null,\"status\":2,\"size\":10,\"page\":1,\"total\":0}'),
+	(8163,'2021-09-04 11:38:45.000000','2021-09-04 11:38:45.000000',1,'/admin/taskInfo/page','127.0.0.1','127.0.0.1:51493','{\"types\":1,\"status\":1,\"size\":10,\"page\":1,\"total\":0}'),
+	(8164,'2021-09-04 11:38:45.000000','2021-09-04 11:38:45.000000',1,'/admin/taskInfo/page','127.0.0.1','127.0.0.1:51487','{\"types\":2,\"status\":1,\"size\":10,\"page\":1,\"total\":0}'),
+	(8165,'2021-09-04 11:38:45.000000','2021-09-04 11:38:45.000000',1,'/admin/taskInfo/log','127.0.0.1','127.0.0.1:51505','{\"page\":\"2\",\"size\":\"10\",\"total\":\"737\"}'),
+	(8166,'2021-09-04 11:38:48.000000','2021-09-04 11:38:48.000000',1,'/admin/baseComm/permmenu','127.0.0.1','127.0.0.1:51532',NULL),
+	(8167,'2021-09-04 11:38:48.000000','2021-09-04 11:38:48.000000',1,'/admin/baseComm/person','127.0.0.1','127.0.0.1:51537',NULL),
+	(8168,'2021-09-04 11:39:11.000000','2021-09-04 11:39:11.000000',1,'/admin/taskInfo/getTaskScheduleMethods','127.0.0.1','127.0.0.1:51635',NULL),
+	(8169,'2021-09-04 11:39:11.000000','2021-09-04 11:39:11.000000',1,'/admin/taskInfo/page','127.0.0.1','127.0.0.1:51641','{\"types\":2,\"status\":1,\"size\":10,\"page\":1,\"total\":0}'),
+	(8170,'2021-09-04 11:39:11.000000','2021-09-04 11:39:11.000000',1,'/admin/taskInfo/page','127.0.0.1','127.0.0.1:51642','{\"types\":1,\"status\":1,\"size\":10,\"page\":1,\"total\":0}'),
+	(8171,'2021-09-04 11:39:11.000000','2021-09-04 11:39:11.000000',1,'/admin/taskInfo/log','127.0.0.1','127.0.0.1:51649','{\"page\":\"1\",\"size\":\"10\"}'),
+	(8172,'2021-09-04 11:39:11.000000','2021-09-04 11:39:11.000000',1,'/admin/taskInfo/page','127.0.0.1','127.0.0.1:51643','{\"types\":null,\"status\":2,\"size\":10,\"page\":1,\"total\":0}'),
+	(8173,'2021-09-04 11:39:11.000000','2021-09-04 11:39:11.000000',1,'/admin/taskInfo/log','127.0.0.1','127.0.0.1:51654','{\"page\":\"2\",\"size\":\"10\",\"total\":\"737\"}'),
+	(8174,'2021-09-04 11:39:15.000000','2021-09-04 11:39:15.000000',1,'/admin/taskInfo/log','127.0.0.1','127.0.0.1:51677','{\"id\":\"1\",\"order\":\"id\",\"page\":\"1\",\"size\":\"10\",\"sort\":\"desc\",\"total\":\"737\"}'),
+	(8175,'2021-09-04 11:39:17.000000','2021-09-04 11:39:17.000000',1,'/admin/taskInfo/log','127.0.0.1','127.0.0.1:51685','{\"id\":\"2\",\"order\":\"id\",\"page\":\"1\",\"size\":\"10\",\"sort\":\"desc\",\"total\":\"20\"}'),
+	(8176,'2021-09-04 11:39:23.000000','2021-09-04 11:39:23.000000',1,'/admin/taskInfo/log','127.0.0.1','127.0.0.1:51712','{\"id\":\"2\",\"order\":\"id\",\"page\":\"1\",\"size\":\"10\",\"sort\":\"desc\",\"status\":\"2\",\"total\":\"5\"}'),
+	(8177,'2021-09-04 11:39:24.000000','2021-09-04 11:39:24.000000',1,'/admin/taskInfo/log','127.0.0.1','127.0.0.1:51719','{\"id\":\"2\",\"order\":\"id\",\"page\":\"1\",\"size\":\"10\",\"sort\":\"desc\",\"status\":\"1\",\"total\":\"0\"}'),
+	(8178,'2021-09-04 11:39:28.000000','2021-09-04 11:39:28.000000',1,'/admin/demoGo/page','127.0.0.1','127.0.0.1:51743','{\"page\":1,\"size\":20}'),
+	(8179,'2021-09-04 11:39:30.000000','2021-09-04 11:39:30.000000',1,'/admin/appGoodsInfo/page','127.0.0.1','127.0.0.1:51754','{\"page\":1,\"size\":20}'),
+	(8180,'2021-09-04 11:39:32.000000','2021-09-04 11:39:32.000000',1,'/admin/demoGo/page','127.0.0.1','127.0.0.1:51762','{\"page\":1,\"size\":20}'),
+	(8181,'2021-09-04 11:39:42.000000','2021-09-04 11:39:42.000000',1,'/admin/genCodeLog/page','127.0.0.1','127.0.0.1:51805','{\"page\":1,\"size\":20}'),
+	(8182,'2021-09-04 11:39:44.000000','2021-09-04 11:39:44.000000',1,'/admin/genCodeConfig/firstInfo','127.0.0.1','127.0.0.1:51817',NULL),
+	(8183,'2021-09-04 11:40:01.000000','2021-09-04 11:40:01.000000',1,'/admin/genCodeConfig/save','127.0.0.1','127.0.0.1:51897','{\"dbHost\":\"127.0.0.1\",\"dbPort\":\"3306\",\"dbUser\":\"root\",\"dbPass\":\"123456\",\"dbName\":\"go-easy\",\"dbType\":\"mysql\",\"adminGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasyAdmin/\",\"ServerGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasy/\",\"defaultCreatedAtLabel\":\"createTime\",\"defaultUpdatedAtLabel\":\"updateTime\",\"ignoreTablePrefix\":\"u_,base_\",\"activeCode\":\"\",\"id\":1}'),
+	(8184,'2021-09-04 11:40:03.000000','2021-09-04 11:40:03.000000',1,'/admin/genCodeConfig/firstInfo','127.0.0.1','127.0.0.1:51906',NULL),
+	(8185,'2021-09-04 11:40:15.000000','2021-09-04 11:40:15.000000',1,'/admin/genCodeConfig/firstInfo','127.0.0.1','127.0.0.1:51966',NULL),
+	(8186,'2021-09-04 11:40:21.000000','2021-09-04 11:40:21.000000',1,'/admin/genCodeConfig/firstInfo','127.0.0.1','127.0.0.1:51993',NULL),
+	(8187,'2021-09-04 11:41:42.000000','2021-09-04 11:41:42.000000',1,'/admin/baseComm/permmenu','127.0.0.1','127.0.0.1:52348',NULL),
+	(8188,'2021-09-04 11:41:42.000000','2021-09-04 11:41:42.000000',1,'/admin/baseComm/person','127.0.0.1','127.0.0.1:52351',NULL),
+	(8189,'2021-09-04 11:41:42.000000','2021-09-04 11:41:42.000000',1,'/admin/genCodeLog/page','127.0.0.1','127.0.0.1:52353','{\"page\":1,\"size\":20}'),
+	(8190,'2021-09-04 11:41:44.000000','2021-09-04 11:41:44.000000',1,'/admin/genCodeConfig/firstInfo','127.0.0.1','127.0.0.1:52362',NULL),
+	(8191,'2021-09-04 11:42:46.000000','2021-09-04 11:42:46.000000',1,'/admin/genCodeConfig/save','127.0.0.1','127.0.0.1:52626','{\"dbHost\":\"127.0.0.1\",\"dbPort\":\"3306\",\"dbUser\":\"root\",\"dbPass\":\"123456\",\"dbName\":\"go-easy\",\"dbType\":\"mysql\",\"adminGenPath\":\"/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasyAdmin/\",\"ServerGenPath\":\"/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasy/\",\"defaultCreatedAtLabel\":\"createTime\",\"defaultUpdatedAtLabel\":\"updateTime\",\"ignoreTablePrefix\":\"u_,base_\",\"activeCode\":\"\",\"id\":1}'),
+	(8192,'2021-09-04 11:42:48.000000','2021-09-04 11:42:48.000000',1,'/admin/genCodeConfig/firstInfo','127.0.0.1','127.0.0.1:52639',NULL);
 
 /*!40000 ALTER TABLE `base_sys_log` ENABLE KEYS */;
 UNLOCK TABLES;
@@ -2123,7 +2163,7 @@ CREATE TABLE `gen_code_config` (
   `dbName` varchar(100) NOT NULL DEFAULT '' COMMENT '数据库名',
   `dbType` varchar(30) NOT NULL DEFAULT 'mysql' COMMENT '数据库类型，如mysql/pgsql/mssql/sqlite/oracle，默认mysql',
   `adminGenPath` text NOT NULL COMMENT '生成代码前端目录',
-  `ServerGenPath` text NOT NULL COMMENT '生成代码服务端目录',
+  `serverGenPath` text NOT NULL COMMENT '生成代码服务端目录',
   `defaultCreatedAtLabel` varchar(30) NOT NULL DEFAULT 'createTime' COMMENT '默认的创建时间字段格式，如createTime',
   `defaultUpdatedAtLabel` varchar(30) NOT NULL DEFAULT 'updateTime' COMMENT '默认的更新时间字段格式，如updateTime',
   `ignoreTablePrefix` varchar(300) NOT NULL DEFAULT '' COMMENT '忽略此前缀的表，逗号分隔',
@@ -2137,9 +2177,9 @@ CREATE TABLE `gen_code_config` (
 LOCK TABLES `gen_code_config` WRITE;
 /*!40000 ALTER TABLE `gen_code_config` DISABLE KEYS */;
 
-INSERT INTO `gen_code_config` (`id`, `createTime`, `updateTime`, `dbHost`, `dbPort`, `dbUser`, `dbPass`, `dbName`, `dbType`, `adminGenPath`, `ServerGenPath`, `defaultCreatedAtLabel`, `defaultUpdatedAtLabel`, `ignoreTablePrefix`, `tableNames`, `activeCode`)
+INSERT INTO `gen_code_config` (`id`, `createTime`, `updateTime`, `dbHost`, `dbPort`, `dbUser`, `dbPass`, `dbName`, `dbType`, `adminGenPath`, `serverGenPath`, `defaultCreatedAtLabel`, `defaultUpdatedAtLabel`, `ignoreTablePrefix`, `tableNames`, `activeCode`)
 VALUES
-	(1,'2021-08-27 13:43:11.000000','2021-08-28 20:52:52.000000','127.0.0.1','3306','root','123456','go-easy','mysql','/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasyAdmin/','/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasy/','createTime','updateTime','u_,base_',NULL,''),
+	(1,'2021-08-27 13:43:11.000000','2021-09-04 11:42:46.000000','127.0.0.1','3306','root','123456','go-easy','mysql','/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasyAdmin/','/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasy/','createTime','updateTime','u_,base_',NULL,''),
 	(4,'2021-08-27 15:47:08.000000','2021-08-27 15:47:08.000000','1','12','2','12','1','1','12','2','12','12','1',NULL,'');
 
 /*!40000 ALTER TABLE `gen_code_config` ENABLE KEYS */;
@@ -2176,7 +2216,8 @@ VALUES
 	(4,'2021-08-28 12:40:35.633310','2021-08-28 12:40:35.633310','激活1','1','demo_go,test_a','{\"Title\":\"激活1\",\"Description\":\"1\",\"ActiveCode\":\"abcjasonlaw\",\"TableNames\":\"demo_go,test_a\",\"ServerGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasy/\",\"AdminGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasyAdmin/\",\"DbHost\":\"127.0.0.1\",\"DbPort\":\"3306\",\"DbUser\":\"root\",\"DbPass\":\"123456\",\"DbName\":\"go-easy\",\"DbType\":\"mysql\",\"DefaultCreatedAtLabel\":\"createTime\",\"DefaultUpdatedAtLabel\":\"updateTime\",\"IgnoreTablePrefix\":\"u_,base_\"}','代码生成成功'),
 	(5,'2021-08-28 12:54:50.695664','2021-08-28 12:54:50.695664','没激活13','没激活13','demo_go,test_a','{\"Title\":\"没激活13\",\"Description\":\"没激活13\",\"ActiveCode\":\"\",\"TableNames\":\"demo_go,test_a\",\"ServerGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasy/\",\"AdminGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasyAdmin/\",\"DbHost\":\"127.0.0.1\",\"DbPort\":\"3306\",\"DbUser\":\"root\",\"DbPass\":\"123456\",\"DbName\":\"go-easy\",\"DbType\":\"mysql\",\"DefaultCreatedAtLabel\":\"createTime\",\"DefaultUpdatedAtLabel\":\"updateTime\",\"IgnoreTablePrefix\":\"u_,base_\"}','代码生成成功'),
 	(6,'2021-08-28 12:58:33.458086','2021-08-28 12:58:33.458086','f s','放松','demo_go,gen_code_log','{\"Title\":\"f s\",\"Description\":\"放松\",\"ActiveCode\":\"\",\"TableNames\":\"demo_go,gen_code_log\",\"ServerGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasy/\",\"AdminGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasyAdmin/\",\"DbHost\":\"127.0.0.1\",\"DbPort\":\"3306\",\"DbUser\":\"root\",\"DbPass\":\"123456\",\"DbName\":\"go-easy\",\"DbType\":\"mysql\",\"DefaultCreatedAtLabel\":\"createTime\",\"DefaultUpdatedAtLabel\":\"updateTime\",\"IgnoreTablePrefix\":\"u_,base_\"}','代码生成成功'),
-	(7,'2021-08-28 13:12:42.293358','2021-08-28 13:12:42.293358','32','32','demo_go,gen_code_log','{\"Title\":\"32\",\"Description\":\"32\",\"ActiveCode\":\"\",\"TableNames\":\"demo_go,gen_code_log\",\"ServerGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasy/\",\"AdminGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasyAdmin/\",\"DbHost\":\"127.0.0.1\",\"DbPort\":\"3306\",\"DbUser\":\"root\",\"DbPass\":\"123456\",\"DbName\":\"go-easy\",\"DbType\":\"mysql\",\"DefaultCreatedAtLabel\":\"createTime\",\"DefaultUpdatedAtLabel\":\"updateTime\",\"IgnoreTablePrefix\":\"u_,base_\"}','代码生成成功');
+	(7,'2021-08-28 13:12:42.293358','2021-08-28 13:12:42.293358','32','32','demo_go,gen_code_log','{\"Title\":\"32\",\"Description\":\"32\",\"ActiveCode\":\"\",\"TableNames\":\"demo_go,gen_code_log\",\"ServerGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasy/\",\"AdminGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasyAdmin/\",\"DbHost\":\"127.0.0.1\",\"DbPort\":\"3306\",\"DbUser\":\"root\",\"DbPass\":\"123456\",\"DbName\":\"go-easy\",\"DbType\":\"mysql\",\"DefaultCreatedAtLabel\":\"createTime\",\"DefaultUpdatedAtLabel\":\"updateTime\",\"IgnoreTablePrefix\":\"u_,base_\"}','代码生成成功'),
+	(8,'2021-09-04 11:40:48.021385','2021-09-04 11:40:48.021385','更新demo_go','更新demo_go','demo_go','{\"Title\":\"更新demo_go\",\"Description\":\"更新demo_go\",\"ActiveCode\":\"\",\"TableNames\":\"demo_go\",\"ServerGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasy/\",\"AdminGenPath\":\"/Users/jasonlaw/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasyAdmin/\",\"DbHost\":\"127.0.0.1\",\"DbPort\":\"3306\",\"DbUser\":\"root\",\"DbPass\":\"123456\",\"DbName\":\"go-easy\",\"DbType\":\"mysql\",\"DefaultCreatedAtLabel\":\"createTime\",\"DefaultUpdatedAtLabel\":\"updateTime\",\"IgnoreTablePrefix\":\"u_,base_\"}','mkdir /Users/jasonlaw: permission denied');
 
 /*!40000 ALTER TABLE `gen_code_log` ENABLE KEYS */;
 UNLOCK TABLES;
