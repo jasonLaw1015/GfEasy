@@ -151,7 +151,7 @@ func (c *baseComm) UploadMode(r *ghttp.Request) {
 // @Security
 func (c *baseComm) Upload(r *ghttp.Request) {
 	files := r.GetUploadFiles("file")
-	names, err := files.Save("public/resource/upload/", true)
+	names, err := files.Save(g.Cfg().GetString("server.uploadServerRoot"), true)
 	if err != nil {
 		r.Response.WriteExit(err)
 	}

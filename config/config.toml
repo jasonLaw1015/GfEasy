@@ -2,7 +2,7 @@
 [server]
 	address        = ":8199"
     serverRoot     = "public"
-    uploadServerRoot     = "public/resource/upload"
+    uploadServerRoot     = "public/resource/image/"
 	serverAgent    = "goEasy"
 	logPath        = "/tmp/log/goEasy/server"
 	nameToUriType  = 2
