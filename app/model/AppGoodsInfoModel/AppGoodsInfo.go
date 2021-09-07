@@ -74,9 +74,9 @@ type InfoReqParams struct {
 	Id int `p:"id" v:"required#id不能为空"`
 }
 type ListReqParams struct {
-	Title  string `p:"title"`
-	Types  int    `p:"types"`
-	Status int    `p:"status"`
+	Title  string `p:"title" `
+	Types  int    `p:"types"  default:"-1"`
+	Status int    `p:"status"  default:"-1"`
 }
 type DeleteReqParams struct {
 	Ids []int `p:"ids" v:"required#ids不能为空"`

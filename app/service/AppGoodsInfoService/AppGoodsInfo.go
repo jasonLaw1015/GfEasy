@@ -63,8 +63,7 @@ func (s *appGoodsInfoService) Page(req *AppGoodsInfoModel.PageReqParams) (total,
 	}
 
 	if req.KeyWord != "" {
-		M = M.WhereLike("title", "%"+req.KeyWord+"%")
-
+		M = M.Where("(title like ? OR  1 like ?)", "%"+req.KeyWord+"%", "%"+req.KeyWord+"%")
 	}
 	if req.StartTime != "" {
 		M = M.WhereGTE("createTime", req.StartTime)

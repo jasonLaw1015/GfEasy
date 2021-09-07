@@ -102,7 +102,7 @@ type InfoReqParams struct {
 }
 type ListReqParams struct {
 	Name   string `p:"name"`
-	Status int    `p:"status"`
+	Status int    `p:"status" default:"-1"`
 }
 type DeleteReqParams struct {
 	Ids []int `p:"ids" v:"required#ids不能为空"`

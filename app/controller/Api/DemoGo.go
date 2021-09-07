@@ -133,6 +133,10 @@ func (c *demoGo) List(r *ghttp.Request) {
 		condition["other = ?"] = req.Other
 	}
 
+	if req.OtherStr != "" {
+		condition["otherStr = ?"] = req.OtherStr
+	}
+
 	result, err := DemoGoService.S.List(condition)
 	if err != nil {
 		response.FailJson(true, r, err.Error())

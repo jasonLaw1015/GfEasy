@@ -10,17 +10,19 @@ import (
 
 // Entity is the golang structure for table demoGo.
 type Entity struct {
-	Id         int         `orm:"id,primary" json:"id"`         // ID
-	CreateTime *gtime.Time `orm:"createTime" json:"createTime"` // 创建时间
-	UpdateTime *gtime.Time `orm:"updateTime" json:"updateTime"` // 更新时间
-	Title      string      `orm:"title" json:"title"`           // 标题
-	SubTitle   string      `orm:"subTitle" json:"subTitle"`     // 副标题##IsSearchParams
-	Pic        string      `orm:"pic" json:"pic"`               // 商品主图
-	Types      int         `orm:"types" json:"types"`           // 类型#1:上架,2:下架
-	Status     int         `orm:"status" json:"status"`         // 状态#1:启用,2:禁用
-	Tupian     string      `orm:"tupian" json:"tupian"`         // 图片##IsPicColumn
-	Other      int         `orm:"other" json:"other"`           // 其他状态#1:已激活,2:未激活#IsDictColumn,IsSearchParams
-	Sort       int         `orm:"sort" json:"sort"`             // 排序
+	Id             int         `orm:"id,primary" json:"id"`                 // ID
+	CreateTime     *gtime.Time `orm:"createTime" json:"createTime"`         // 创建时间
+	UpdateTime     *gtime.Time `orm:"updateTime" json:"updateTime"`         // 更新时间
+	Title          string      `orm:"title" json:"title"`                   // 标题
+	SubTitle       string      `orm:"subTitle" json:"subTitle"`             // 副标题##IsSearchParams
+	Pic            string      `orm:"pic" json:"pic"`                       // 商品主图
+	Types          int         `orm:"types" json:"types"`                   // 类型#1:上架,2:下架
+	Status         int         `orm:"status" json:"status"`                 // 状态#1:启用,2:禁用
+	Tupian         string      `orm:"tupian" json:"tupian"`                 // 图片##IsPicColumn
+	Other          int         `orm:"other" json:"other"`                   // 其他状态#1:已激活,2:未激活#IsDictColumn,IsSearchParams
+	Sort           int         `orm:"sort" json:"sort"`                     // 排序
+	OtherStr       string      `orm:"otherStr" json:"otherStr"`             // 其他状态2#s1:已激活,s2a2:未激活#IsDictColumn,IsSearchParams
+	AppGoodsInfoId int         `orm:"appGoodsInfoId" json:"appGoodsInfoId"` // appGoodsInfoID
 }
 
 var (
@@ -50,6 +52,7 @@ type PageReqParams struct {
 	Types     int    `p:"types" default:"-1"`
 	Status    int    `p:"status" default:"-1"`
 	Other     int    `p:"other" default:"-1"`
+	OtherStr  string `p:"otherStr" default:"-1"`
 	Order     string `p:"order"`
 	Sort      string `p:"sort"`
 	IsExport  bool   `p:"isExport"`
@@ -57,35 +60,40 @@ type PageReqParams struct {
 	EndTime   string `p:"endTime"`
 }
 type AddReqParams struct {
-	Title    string `p:"title" v:"required#标题不能为空"`
-	SubTitle string `p:"subTitle" `
-	Pic      string `p:"pic" v:"required#商品主图不能为空"`
-	Types    int    `p:"types" v:"required#类型#1:上架,2:下架不能为空"`
-	Status   int    `p:"status" v:"required#状态#1:启用,2:禁用不能为空"`
-	Tupian   string `p:"tupian" `
-	Other    int    `p:"other" `
-	Sort     int    `p:"sort" v:"required#排序不能为空"`
+	Title          string `p:"title" v:"required#标题不能为空"`
+	SubTitle       string `p:"subTitle" `
+	Pic            string `p:"pic" v:"required#商品主图不能为空"`
+	Types          int    `p:"types" v:"required#类型#1:上架,2:下架不能为空"`
+	Status         int    `p:"status" v:"required#状态#1:启用,2:禁用不能为空"`
+	Tupian         string `p:"tupian" `
+	Other          int    `p:"other" `
+	Sort           int    `p:"sort" v:"required#排序不能为空"`
+	OtherStr       string `p:"otherStr" v:"required#其他状态2#s1:已激活,s2a2:未激活#IsDictColumn,IsSearchParams不能为空"`
+	AppGoodsInfoId int    `p:"appGoodsInfoId" v:"required#appGoodsInfoID不能为空"`
 }
 type UpdateReqParams struct {
-	Id       int    `p:"id" v:"required#ID不能为空"`
-	Title    string `p:"title" `
-	SubTitle string `p:"subTitle" `
-	Pic      string `p:"pic" `
-	Types    int    `p:"types" `
-	Status   int    `p:"status" `
-	Tupian   string `p:"tupian" `
-	Other    int    `p:"other" `
-	Sort     int    `p:"sort" `
+	Id             int    `p:"id" v:"required#ID不能为空"`
+	Title          string `p:"title" `
+	SubTitle       string `p:"subTitle" `
+	Pic            string `p:"pic" `
+	Types          int    `p:"types" `
+	Status         int    `p:"status" `
+	Tupian         string `p:"tupian" `
+	Other          int    `p:"other" `
+	Sort           int    `p:"sort" `
+	OtherStr       string `p:"otherStr" `
+	AppGoodsInfoId int    `p:"appGoodsInfoId" `
 }
 type InfoReqParams struct {
 	Id int `p:"id" v:"required#id不能为空"`
 }
 type ListReqParams struct {
-	Title    string `p:"title"`
-	SubTitle string `p:"subTitle"`
-	Types    int    `p:"types"`
-	Status   int    `p:"status"`
-	Other    int    `p:"other"`
+	Title    string `p:"title" `
+	SubTitle string `p:"subTitle" `
+	Types    int    `p:"types"  default:"-1"`
+	Status   int    `p:"status"  default:"-1"`
+	Other    int    `p:"other"  default:"-1"`
+	OtherStr string `p:"otherStr"  default:"-1"`
 }
 type DeleteReqParams struct {
 	Ids []int `p:"ids" v:"required#ids不能为空"`

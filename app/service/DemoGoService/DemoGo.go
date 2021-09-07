@@ -66,6 +66,10 @@ func (s *demoGoService) Page(req *DemoGoModel.PageReqParams) (total, page int, s
 		M = M.Where("other=?", req.Other)
 	}
 
+	if req.OtherStr != "-1" {
+		M = M.Where("otherStr=?", req.OtherStr)
+	}
+
 	if req.KeyWord != "" {
 		M = M.Where("(title like ? OR  1 like ?)", "%"+req.KeyWord+"%", "%"+req.KeyWord+"%")
 	}
