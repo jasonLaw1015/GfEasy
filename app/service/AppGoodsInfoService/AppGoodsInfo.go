@@ -111,7 +111,7 @@ func (s *appGoodsInfoService) Page(req *AppGoodsInfoModel.PageReqParams) (total,
 //List
 func (s *appGoodsInfoService) List(condition g.Map) (list []*AppGoodsInfoModel.Entity, err error) {
 
-	err = AppGoodsInfoModel.M.Where(condition).Scan(&list)
+	err = AppGoodsInfoModel.M.Where(condition).Limit(200).Scan(&list)
 	return
 
 }
