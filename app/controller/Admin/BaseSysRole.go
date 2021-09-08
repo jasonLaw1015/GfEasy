@@ -27,12 +27,13 @@ type baseSysRole struct{}
 // @Security
 func (c *baseSysRole) Add(r *ghttp.Request) {
 	var req *BaseSysRoleModel.AddReqParams
+	adminUser := ContextService.S.Get(r.GetCtx()).User
+	req.AdminUserId = adminUser.AdminUserId
 	//获取参数&参数校验
 	if err := r.Parse(&req); err != nil {
 		response.FailJson(true, r, err.Error())
 	}
-	adminUser := ContextService.S.Get(r.GetCtx()).User
-	req.AdminUserId = adminUser.AdminUserId
+
 	id, err := BaseSysRoleService.S.Add(req)
 	if err != nil {
 		response.FailJson(true, r, err.Error())
