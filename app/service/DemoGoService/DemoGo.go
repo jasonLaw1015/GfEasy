@@ -118,7 +118,7 @@ func (s *demoGoService) Page(req *DemoGoModel.PageReqParams) (total, page int, s
 
 //List
 func (s *demoGoService) List(condition g.Map) (list []*DemoGoModel.Entity, err error) {
-
+	list = make([]*DemoGoModel.Entity, 0)
 	err = DemoGoModel.M.Where(condition).Limit(200).Scan(&list)
 	return
 
