@@ -356,6 +356,8 @@ types status
 
 6.排序字段： sort orderNum
 
+7.外键名要写全且是小驼峰。如base_a、base_b，a表和b表关联的话。b表中外键字段名必须为baseAId。否则前端ui的select组件不生效
+
 ### 指定规则：
 
 **有些数据库设计，有时我不想使用上述提供的字段名。为提高灵活性，特意提供了指定标识，
@@ -370,8 +372,7 @@ types status
 | IsKeyWordParams             | 主要是page接口的条件使用,用于模糊查询                                                                      | ![img_4.png](screenshot/img_4.png) |
 | IsDictColumn,IsSearchParams | IsDictColumn往往是要跟IsSearchParams一起使用。如：`其他状态#1:已激活,2:未激活#IsDictColumn,IsSearchParams` | ![img_5.png](screenshot/img_5.png) |
 | IsNumberColumn              | 该字段是数值类型，前端部分会使用el-input-number来处里该字段                                                | ![img_6.png](screenshot/img_6.png) |
-| IsPicColumn                 | 该字段是图片类型，前端部分会使用cl-upload-space-preview来处里该字段                                                 ![img_7.png](screenshot/img_7.png)|
-| IsNumberColumn              | 该字段是数值类型，前端部分会使用cl-upload-space-preview来处里该字段                                        | ![img_7.png](screenshot/img_7.png) |
+| IsPicColumn                 | 该字段是图片类型，前端部分会使用cl-upload-space-preview来处里该字段                                        | ![img_7.png](screenshot/img_7.png)|
 
 **特别提醒：尽量不要用type来做字段名，否则生成的go代码有可能会出问题。因为type是go语法的关键字。目前我是用types代替。其他go关键字也是如此**
 
