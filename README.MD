@@ -13,10 +13,22 @@
 
 ### 低代码开发框架
 
+### 至少减少百分90%工作量
+
+### 可快速把现有系统转成GoEasy版本
+
 ### 后端使用GoFrame开发;后台前端使用 cool-admin-vue
+
+### 后台使用自适应布局，手机、PC完美使用
 
 </p>
 </div>
+
+
+![pc.png](screenshot/pc.png)
+
+
+![GoEasy-移动.png](screenshot/GoEasy-移动.png)
 
 # 一、快速开始
 
@@ -188,8 +200,32 @@ yarn build
 
 ![img_12.png](screenshot/img_12.png)
 
-## 代码生成
+## 代码生成操作【重要】
+### 前提条件，下载代码生成核心部件。
 
+**地址:**
+
+https://www.yuque.com/docs/share/3e714752-0de1-43e2-96e4-461f4e74fc93?# 《代码生成模块》
+
+下载适合自己系统的版本，然后点击运行即可【这步是生成代码的前提条件，必须运行】
+
+运行结果：
+出现以下截图即正确
+![genCodeLog.png](screenshot/genCodeLog.png)
+#### 知识讲解：
+
+##### GOOS : 目标平台
+
+mac 对应 darwin
+linux 对应 linux
+windows 对应 windows
+
+##### GOARCH ：目标平台的体系架构【386，amd64,arm】, 目前市面上的个人电脑一般都是amd64架构的
+386 也称 x86 对应 32位操作系统
+amd64 也称 x64 对应 64位操作系统
+arm 这种架构一般用于嵌入式开发。 比如 Android ， IOS ， Win mobile , TIZEN 等
+
+### 界面操作
 进入系统-》/核心工具/代码生成工具
 ![img_14.png](screenshot/img_14.png)
 
