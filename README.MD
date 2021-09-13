@@ -7,6 +7,8 @@
 <div align=center>
 <p>
 
+## GoEasy So Easy
+
 ### 快速crud开发框架，甚至于一行代码不用敲
 
 ### 自动根据数据库表结构自动生成crud代码
