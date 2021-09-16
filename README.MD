@@ -26,8 +26,7 @@
 </p>
 </div>
 
-
-![pc.png](screenshot/pc.png)
+![img.png](img.png)
 
 
 ![GfEasy-移动.png](screenshot/GfEasy-移动.png)
@@ -193,14 +192,14 @@ yarn build
 访问
 [http://localhost:8000](http://localhost:8000)
 
-![img_9.png](screenshot/img_9.png)
+![img_2.png](img_2.png)
 
 账号密码：admin/123456
-![img_10.png](screenshot/img_10.png)
+![img.png](img.png)
 
-![img_11.png](screenshot/img_11.png)
+![img_4.png](img_4.png)
 
-![img_12.png](screenshot/img_12.png)
+
 
 ## 代码生成操作【重要】
 ### 前提条件，下载代码生成核心部件。
@@ -229,7 +228,7 @@ arm 这种架构一般用于嵌入式开发。 比如 Android ， IOS ， Win mo
 
 ### 界面操作
 进入系统-》/核心工具/代码生成工具
-![img_14.png](screenshot/img_14.png)
+![img_5.png](img_5.png)
 
 然后按步骤123，配置相关参数
 步骤1：配置所需要环境参数
@@ -256,7 +255,7 @@ router/adminRouter.go
 router/apiRouter.go
 ```
 
-![img_18.png](screenshot/img_18.png)
+![img_7.png](img_7.png)
 
 将在GfEasyAdmin生成，（前端生成代码都会在GfEasyAdmin/src/cool/modules/genCode下）
 
@@ -266,11 +265,10 @@ GfEasyAdmin/src/cool/modules/genCode/service/demoGo.ts
 GfEasyAdmin/src/cool/modules/genCode/views/demoGo.vue
 ```
 
-![img_19.png](screenshot/img_19.png)
-
+![img_8.png](img_8.png)
 并自动生成权限和菜单加入前端路由，下图
 
-![img_20.png](screenshot/img_20.png)
+![img_9.png](img_9.png)
 
 **注意：**
 
@@ -283,7 +281,7 @@ go不会热更新，请自己手动run一下
 
 比如，建一个demo_go表；
 
-![img.png](screenshot/img.png)
+![img_10.png](img_10.png)
 
 ```bigquery
 CREATE TABLE `demo_go` (
@@ -383,7 +381,7 @@ types status
 新增定时任务逻辑
 在app/task文件夹下，新增方法即可
 
-![img_21.png](screenshot/img_21.png)
+![img_11.png](img_11.png)
 
 然后在后台=》任务管理/任务列表
 
