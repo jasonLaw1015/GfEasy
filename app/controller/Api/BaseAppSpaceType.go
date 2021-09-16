@@ -4,9 +4,9 @@
 package Api
 
 import (
-	"goEasy/app/model/BaseAppSpaceTypeModel"
-	"goEasy/app/service/BaseAppSpaceTypeService"
-	"goEasy/library/response"
+	"gfEasy/app/model/BaseAppSpaceTypeModel"
+	"gfEasy/app/service/BaseAppSpaceTypeService"
+	"gfEasy/library/response"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

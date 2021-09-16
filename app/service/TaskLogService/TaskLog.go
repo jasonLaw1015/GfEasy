@@ -4,7 +4,7 @@
 package TaskLogService
 
 import (
-	"goEasy/app/model/TaskLogModel"
+	"gfEasy/app/model/TaskLogModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

@@ -4,9 +4,9 @@
 package Api
 
 import (
-	"goEasy/app/model/GenCodeLogModel"
-	"goEasy/app/service/GenCodeLogService"
-	"goEasy/library/response"
+	"gfEasy/app/model/GenCodeLogModel"
+	"gfEasy/app/service/GenCodeLogService"
+	"gfEasy/library/response"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

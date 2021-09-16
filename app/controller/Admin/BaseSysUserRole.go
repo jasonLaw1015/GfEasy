@@ -4,9 +4,9 @@
 package Admin
 
 import (
-	"goEasy/app/model/BaseSysUserRoleModel"
-	"goEasy/app/service/BaseSysUserRoleService"
-	"goEasy/library/response"
+	"gfEasy/app/model/BaseSysUserRoleModel"
+	"gfEasy/app/service/BaseSysUserRoleService"
+	"gfEasy/library/response"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

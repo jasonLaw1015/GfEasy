@@ -4,7 +4,7 @@
 package BaseSysRoleMenuService
 
 import (
-	"goEasy/app/model/BaseSysRoleMenuModel"
+	"gfEasy/app/model/BaseSysRoleMenuModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

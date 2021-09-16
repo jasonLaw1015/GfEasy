@@ -4,7 +4,7 @@
 package BaseSysDepartmentService
 
 import (
-	"goEasy/app/model/BaseSysDepartmentModel"
+	"gfEasy/app/model/BaseSysDepartmentModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

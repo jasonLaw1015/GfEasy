@@ -4,15 +4,15 @@
 package BaseOpenService
 
 import (
+	"gfEasy/app/model/BaseOpenModel"
+	"gfEasy/app/model/BaseSysUserModel"
+	"gfEasy/app/model/BaseSysUserRoleModel"
+	"gfEasy/app/service/BaseSysRoleService"
+	"gfEasy/library/utils/cache"
+	"gfEasy/library/utils/captcha"
+	"gfEasy/library/utils/jwt"
 	"github.com/gogf/gf/crypto/gmd5"
 	"github.com/gogf/gf/encoding/gjson"
-	"goEasy/app/model/BaseOpenModel"
-	"goEasy/app/model/BaseSysUserModel"
-	"goEasy/app/model/BaseSysUserRoleModel"
-	"goEasy/app/service/BaseSysRoleService"
-	"goEasy/library/utils/cache"
-	"goEasy/library/utils/captcha"
-	"goEasy/library/utils/jwt"
 	"time"
 
 	"github.com/gogf/gf/errors/gerror"

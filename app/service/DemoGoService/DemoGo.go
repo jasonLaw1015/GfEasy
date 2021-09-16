@@ -4,7 +4,7 @@
 package DemoGoService
 
 import (
-	"goEasy/app/model/DemoGoModel"
+	"gfEasy/app/model/DemoGoModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

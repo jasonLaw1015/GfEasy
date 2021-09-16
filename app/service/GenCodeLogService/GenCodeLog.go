@@ -4,7 +4,7 @@
 package GenCodeLogService
 
 import (
-	"goEasy/app/model/GenCodeLogModel"
+	"gfEasy/app/model/GenCodeLogModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

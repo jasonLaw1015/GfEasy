@@ -2,14 +2,14 @@
 [server]
 	address        = ":8199"
 	serverRoot     = "public"
-	serverAgent    = "goEasy"
-	logPath        = "/tmp/log/goEasy/server"
+	serverAgent    = "gfEasy"
+	logPath        = "/tmp/log/gfEasy/server"
 	nameToUriType  = 2
 	routeOverWrite = true
 
 # Logger configurations.
 [logger]
-    path   = "/tmp/log/goEasy"
+    path   = "/tmp/log/gfEasy"
     level  = "all"
     stdout = true
 
@@ -24,7 +24,7 @@
     debug = true
     # 数据库日志对象配置
     [database.logger]
-        Path   = "/tmp/log/goEasy/sql"
+        Path   = "/tmp/log/gfEasy/sql"
         Level  = "all"
         Stdout = true
 

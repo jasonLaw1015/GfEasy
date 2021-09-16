@@ -1,15 +1,15 @@
 package Test
 
 import (
+	"gfEasy/app/service/BaseSysLogService"
+	"gfEasy/app/service/BaseSysRoleService"
+	"gfEasy/app/service/TaskInfoService"
+	Task "gfEasy/app/task"
+	"gfEasy/library/response"
+	"gfEasy/library/utils/packObj"
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
 	"github.com/gogf/gf/os/gcron"
-	"goEasy/app/service/BaseSysLogService"
-	"goEasy/app/service/BaseSysRoleService"
-	"goEasy/app/service/TaskInfoService"
-	Task "goEasy/app/task"
-	"goEasy/library/response"
-	"goEasy/library/utils/packObj"
 	"os/exec"
 	"reflect"
 )

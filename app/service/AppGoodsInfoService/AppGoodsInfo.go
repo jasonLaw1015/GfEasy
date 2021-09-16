@@ -4,7 +4,7 @@
 package AppGoodsInfoService
 
 import (
-	"goEasy/app/model/AppGoodsInfoModel"
+	"gfEasy/app/model/AppGoodsInfoModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

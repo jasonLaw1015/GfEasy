@@ -4,15 +4,15 @@
 package BaseSysRoleService
 
 import (
+	"gfEasy/app/model/BaseSysMenuModel"
+	"gfEasy/app/model/BaseSysRoleDepartmentModel"
+	"gfEasy/app/model/BaseSysRoleMenuModel"
+	"gfEasy/app/model/BaseSysRoleModel"
 	"github.com/gogf/gf/container/garray"
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/text/gstr"
 	"github.com/gogf/gf/util/gconv"
-	"goEasy/app/model/BaseSysMenuModel"
-	"goEasy/app/model/BaseSysRoleDepartmentModel"
-	"goEasy/app/model/BaseSysRoleMenuModel"
-	"goEasy/app/model/BaseSysRoleModel"
 )
 
 var S = new(baseSysRoleService)

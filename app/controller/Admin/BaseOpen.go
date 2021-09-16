@@ -5,11 +5,11 @@
 package Admin
 
 import (
-	"goEasy/app/model/BaseOpenModel"
-	"goEasy/app/model/BaseSysParamModel"
-	"goEasy/app/service/BaseOpenService"
-	"goEasy/library/response"
-	"goEasy/library/utils/captcha"
+	"gfEasy/app/model/BaseOpenModel"
+	"gfEasy/app/model/BaseSysParamModel"
+	"gfEasy/app/service/BaseOpenService"
+	"gfEasy/library/response"
+	"gfEasy/library/utils/captcha"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

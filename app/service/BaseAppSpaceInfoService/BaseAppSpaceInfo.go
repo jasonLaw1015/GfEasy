@@ -4,7 +4,7 @@
 package BaseAppSpaceInfoService
 
 import (
-	"goEasy/app/model/BaseAppSpaceInfoModel"
+	"gfEasy/app/model/BaseAppSpaceInfoModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

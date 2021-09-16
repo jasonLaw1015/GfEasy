@@ -4,9 +4,9 @@
 package Api
 
 import (
-	"goEasy/app/model/TaskLogModel"
-	"goEasy/app/service/TaskLogService"
-	"goEasy/library/response"
+	"gfEasy/app/model/TaskLogModel"
+	"gfEasy/app/service/TaskLogService"
+	"gfEasy/library/response"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

@@ -4,9 +4,9 @@
 package Api
 
 import (
-	"goEasy/app/model/BaseSysRoleModel"
-	"goEasy/app/service/BaseSysRoleService"
-	"goEasy/library/response"
+	"gfEasy/app/model/BaseSysRoleModel"
+	"gfEasy/app/service/BaseSysRoleService"
+	"gfEasy/library/response"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

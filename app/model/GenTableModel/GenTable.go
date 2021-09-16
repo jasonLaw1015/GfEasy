@@ -1,7 +1,7 @@
 package GenTableModel
 
 import (
-	"goEasy/app/model/GenTableColumnModel"
+	"gfEasy/app/model/GenTableColumnModel"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/os/gtime"
@@ -88,7 +88,7 @@ type EditReqParams struct {
 
 type GenCodeReq struct {
 	TableNames            string `p:"tableNames" v:"required#请选择要生成的表"`
-	ServerGenPath         string `p:"serverGenPath" default:"./" v:"required#服务端所在文件夹地址，如/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/goEasy/app/controller/Common/GenTable.go"`
+	ServerGenPath         string `p:"serverGenPath" default:"./" v:"required#服务端所在文件夹地址，如/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/gfEasy/app/controller/Common/GenTable.go"`
 	AdminGenPath          string `p:"adminGenPath" default:"./" v:"required#admin文件夹地址"`
 	DbHost                string `p:"dbHost" v:"required#需要数据库host"`
 	DbPort                string `p:"dbPort" v:"required#需要数据库port"`

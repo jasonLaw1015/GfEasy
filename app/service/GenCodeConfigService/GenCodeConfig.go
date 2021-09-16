@@ -4,7 +4,7 @@
 package GenCodeConfigService
 
 import (
-	"goEasy/app/model/GenCodeConfigModel"
+	"gfEasy/app/model/GenCodeConfigModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

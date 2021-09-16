@@ -5,7 +5,7 @@
     "swagger": "2.0",
     "info": {
         "description": "`GoFrame`基础开发框架示例服务API接口文档。",
-        "title": "`goEasy`的API文档",
+        "title": "`gfEasy`的API文档",
         "contact": {},
         "version": "1.0"
     },

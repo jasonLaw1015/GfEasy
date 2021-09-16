@@ -1,9 +1,9 @@
 package router
 
 import (
+	"gfEasy/app/controller/Test"
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
-	"goEasy/app/controller/Test"
 )
 
 func init() {

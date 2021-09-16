@@ -4,9 +4,9 @@
 package Admin
 
 import (
-	"goEasy/app/model/BaseAppSpaceInfoModel"
-	"goEasy/app/service/BaseAppSpaceInfoService"
-	"goEasy/library/response"
+	"gfEasy/app/model/BaseAppSpaceInfoModel"
+	"gfEasy/app/service/BaseAppSpaceInfoService"
+	"gfEasy/library/response"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

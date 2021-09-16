@@ -1,4 +1,4 @@
-module goEasy
+module gfEasy
 
 go 1.16
 

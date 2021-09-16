@@ -4,6 +4,11 @@
 package BaseSysLogService
 
 import (
+	"gfEasy/app/model/BaseSysConfModel"
+	"gfEasy/app/model/BaseSysLogModel"
+	"gfEasy/app/service/BaseSysConfService"
+	ContextService "gfEasy/app/service/ContextService"
+	"gfEasy/library/utils"
 	"github.com/gogf/gf/encoding/gjson"
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"
@@ -11,11 +16,6 @@ import (
 	"github.com/gogf/gf/os/gtime"
 	"github.com/gogf/gf/text/gstr"
 	"github.com/gogf/gf/util/gconv"
-	"goEasy/app/model/BaseSysConfModel"
-	"goEasy/app/model/BaseSysLogModel"
-	"goEasy/app/service/BaseSysConfService"
-	ContextService "goEasy/app/service/ContextService"
-	"goEasy/library/utils"
 )
 
 var S = new(baseSysLogService)

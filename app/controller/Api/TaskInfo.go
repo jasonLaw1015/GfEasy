@@ -4,9 +4,9 @@
 package Api
 
 import (
-	"goEasy/app/model/TaskInfoModel"
-	"goEasy/app/service/TaskInfoService"
-	"goEasy/library/response"
+	"gfEasy/app/model/TaskInfoModel"
+	"gfEasy/app/service/TaskInfoService"
+	"gfEasy/library/response"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

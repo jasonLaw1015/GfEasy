@@ -1,17 +1,17 @@
 package middleWare
 
 import (
+	"gfEasy/app/model/ContextModel"
+	"gfEasy/app/service/BaseSysLogService"
+	"gfEasy/app/service/ContextService"
+	"gfEasy/library/utils"
+	"gfEasy/library/utils/cache"
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
 	"github.com/gogf/gf/util/gconv"
-	"goEasy/app/model/ContextModel"
-	"goEasy/app/service/BaseSysLogService"
-	"goEasy/app/service/ContextService"
-	"goEasy/library/utils"
-	"goEasy/library/utils/cache"
 	"net/http"
 
-	"goEasy/library/utils/jwt"
+	"gfEasy/library/utils/jwt"
 )
 
 //跨域处理中间件
@@ -33,7 +33,7 @@ func CtxAuth(r *ghttp.Request) {
 	if tokenStr == "" {
 		r.Response.WriteStatusExit(http.StatusUnauthorized)
 	}
-	data, err := jwt.ParseToken(tokenStr, []byte(g.Cfg().GetString("jwt.sign", "goEasy")))
+	data, err := jwt.ParseToken(tokenStr, []byte(g.Cfg().GetString("jwt.sign", "gfEasy")))
 	if err != nil {
 		g.Log().Error(err.Error())
 		r.Response.WriteStatusExit(http.StatusUnauthorized, "token不正确")

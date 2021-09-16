@@ -4,9 +4,9 @@
 package Admin
 
 import (
-	"goEasy/app/model/AppGoodsInfoModel"
-	"goEasy/app/service/AppGoodsInfoService"
-	"goEasy/library/response"
+	"gfEasy/app/model/AppGoodsInfoModel"
+	"gfEasy/app/service/AppGoodsInfoService"
+	"gfEasy/library/response"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

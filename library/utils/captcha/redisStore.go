@@ -2,7 +2,7 @@ package captcha
 
 import (
 	"fmt"
-	"goEasy/library/utils/cache"
+	"gfEasy/library/utils/cache"
 	"log"
 	"time"
 )

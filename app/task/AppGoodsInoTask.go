@@ -4,8 +4,8 @@
 package Task
 
 import (
+	"gfEasy/app/service/AppGoodsInfoService"
 	"github.com/gogf/gf/frame/g"
-	"goEasy/app/service/AppGoodsInfoService"
 )
 
 func (s *schedule) GoodsTask() error {

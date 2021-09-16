@@ -4,14 +4,14 @@
 package Task
 
 import (
+	"gfEasy/app/model/AppGoodsInfoModel"
+	"gfEasy/app/model/TaskInfoModel"
+	"gfEasy/app/service/AppGoodsInfoService"
 	"github.com/gogf/gf/container/garray"
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/os/gcron"
 	"github.com/gogf/gf/text/gstr"
 	"github.com/gogf/gf/util/gconv"
-	"goEasy/app/model/AppGoodsInfoModel"
-	"goEasy/app/model/TaskInfoModel"
-	"goEasy/app/service/AppGoodsInfoService"
 )
 
 var Schedule = new(schedule)

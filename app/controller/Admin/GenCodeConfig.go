@@ -4,9 +4,9 @@
 package Admin
 
 import (
-	"goEasy/app/model/GenCodeConfigModel"
-	"goEasy/app/service/GenCodeConfigService"
-	"goEasy/library/response"
+	"gfEasy/app/model/GenCodeConfigModel"
+	"gfEasy/app/service/GenCodeConfigService"
+	"gfEasy/library/response"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

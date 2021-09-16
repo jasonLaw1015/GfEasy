@@ -1,8 +1,8 @@
 package boot
 
 import (
-	"goEasy/app/service/TaskInfoService"
-	_ "goEasy/packed"
+	"gfEasy/app/service/TaskInfoService"
+	_ "gfEasy/packed"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/swagger"

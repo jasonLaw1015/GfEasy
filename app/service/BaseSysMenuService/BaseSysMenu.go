@@ -4,7 +4,7 @@
 package BaseSysMenuService
 
 import (
-	"goEasy/app/model/BaseSysMenuModel"
+	"gfEasy/app/model/BaseSysMenuModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

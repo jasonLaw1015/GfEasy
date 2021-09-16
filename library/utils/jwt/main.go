@@ -2,11 +2,11 @@ package jwt
 
 import (
 	"fmt"
+	"gfEasy/app/model/BaseSysUserModel"
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gogf/gf/crypto/gmd5"
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"
-	"goEasy/app/model/BaseSysUserModel"
 )
 
 //
@@ -28,7 +28,7 @@ func GenerateLoginToken(user *BaseSysUserModel.Entity, roleIds string, isRefresh
 		"jwtVersion":      g.Cfg().GetString("jwt.version", "1.0"),
 		"exp":             exp,
 	})
-	tokenString, err := token.SignedString([]byte(g.Cfg().GetString("jwt.sign", "goEasy")))
+	tokenString, err := token.SignedString([]byte(g.Cfg().GetString("jwt.sign", "gfEasy")))
 	if err == nil {
 		tokenStringMd5 := gmd5.MustEncryptString(tokenString)
 		g.Redis().Do("HSET", "VerifyLoginToken",

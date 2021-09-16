@@ -1,8 +1,8 @@
 package router
 
 import (
-	"goEasy/app/controller/Api"
-	"goEasy/middleWare"
+	"gfEasy/app/controller/Api"
+	"gfEasy/middleWare"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

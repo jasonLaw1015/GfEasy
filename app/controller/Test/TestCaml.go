@@ -1,11 +1,11 @@
 package Test
 
 import (
+	"gfEasy/library/response"
+	"gfEasy/library/utils"
+	"gfEasy/library/utils/captcha"
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"
-	"goEasy/library/response"
-	"goEasy/library/utils"
-	"goEasy/library/utils/captcha"
 )
 
 var TestCaml = new(test)

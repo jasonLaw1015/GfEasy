@@ -6,7 +6,7 @@
 # https://github.com/sequelpro/sequelpro
 #
 # Host: 127.0.0.1 (MySQL 5.7.31)
-# Database: go-easy
+# Database: gf-easy
 # Generation Time: 2021-09-12 12:59:58 +0000
 # ************************************************************
 
@@ -197,7 +197,7 @@ LOCK TABLES `base_sys_department` WRITE;
 
 INSERT INTO `base_sys_department` (`id`, `createTime`, `updateTime`, `name`, `parentId`, `orderNum`)
 VALUES
-	(1,'2021-02-24 21:17:11.971397','2021-09-08 22:47:14.605936','GoEasyTeam',NULL,0),
+	(1,'2021-02-24 21:17:11.971397','2021-09-08 22:47:14.605936','GfEasyTeam',NULL,0),
 	(11,'2021-02-26 14:17:06.690613','2021-02-26 14:17:06.690613','开发',1,0),
 	(12,'2021-02-26 14:17:11.576369','2021-02-26 14:17:11.576369','测试',1,0),
 	(13,'2021-02-26 14:28:59.685177','2021-02-26 14:28:59.685177','游客',1,0);
@@ -964,7 +964,7 @@ LOCK TABLES `gen_code_config` WRITE;
 
 INSERT INTO `gen_code_config` (`id`, `createTime`, `updateTime`, `dbHost`, `dbPort`, `dbUser`, `dbPass`, `dbName`, `dbType`, `adminGenPath`, `serverGenPath`, `defaultCreatedAtLabel`, `defaultUpdatedAtLabel`, `ignoreTablePrefix`, `tableNames`, `activeCode`)
 VALUES
-	(1,'2021-08-27 13:43:11.000000','2021-09-08 13:37:39.000000','127.0.0.1','3306','root','123456','go-easy','mysql','/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasyAdmin/','/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasy/','createTime','updateTime','u_,base_',NULL,''),
+	(1,'2021-08-27 13:43:11.000000','2021-09-08 13:37:39.000000','127.0.0.1','3306','root','123456','gf-easy','mysql','/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GfEasyAdmin/','/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GfEasy/','createTime','updateTime','u_,base_',NULL,''),
 	(4,'2021-08-27 15:47:08.000000','2021-08-27 15:47:08.000000','1','12','2','12','1','1','12','2','12','12','1',NULL,'');
 
 /*!40000 ALTER TABLE `gen_code_config` ENABLE KEYS */;
@@ -995,8 +995,8 @@ LOCK TABLES `gen_code_log` WRITE;
 
 INSERT INTO `gen_code_log` (`id`, `createTime`, `updateTime`, `title`, `description`, `tables`, `params`, `res`)
 VALUES
-	(1,'2021-09-12 12:29:41.758618','2021-09-12 12:29:41.758618','s','s','demo_go','{\"Title\":\"s\",\"Description\":\"s\",\"ActiveCode\":\"*****\",\"TableNames\":\"demo_go\",\"ServerGenPath\":\"/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasy/\",\"AdminGenPath\":\"/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasyAdmin/\",\"DbHost\":\"127.0.0.1\",\"DbPort\":\"3306\",\"DbUser\":\"root\",\"DbPass\":\"123456\",\"DbName\":\"go-easy\",\"DbType\":\"mysql\",\"DefaultCreatedAtLabel\":\"createTime\",\"DefaultUpdatedAtLabel\":\"updateTime\",\"IgnoreTablePrefix\":\"u_,base_\"}','代码生成成功'),
-	(2,'2021-09-12 14:50:05.214990','2021-09-12 14:50:05.214990','d','d','demo_go','{\"Title\":\"d\",\"Description\":\"d\",\"ActiveCode\":\"*****\",\"TableNames\":\"demo_go\",\"ServerGenPath\":\"/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasy/\",\"AdminGenPath\":\"/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GoEasyAdmin/\",\"DbHost\":\"127.0.0.1\",\"DbPort\":\"3306\",\"DbUser\":\"root\",\"DbPass\":\"123456\",\"DbName\":\"go-easy\",\"DbType\":\"mysql\",\"DefaultCreatedAtLabel\":\"createTime\",\"DefaultUpdatedAtLabel\":\"updateTime\",\"IgnoreTablePrefix\":\"u_,base_\"}','代码生成成功');
+	(1,'2021-09-12 12:29:41.758618','2021-09-12 12:29:41.758618','s','s','demo_go','{\"Title\":\"s\",\"Description\":\"s\",\"ActiveCode\":\"*****\",\"TableNames\":\"demo_go\",\"ServerGenPath\":\"/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GfEasy/\",\"AdminGenPath\":\"/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GfEasyAdmin/\",\"DbHost\":\"127.0.0.1\",\"DbPort\":\"3306\",\"DbUser\":\"root\",\"DbPass\":\"123456\",\"DbName\":\"gf-easy\",\"DbType\":\"mysql\",\"DefaultCreatedAtLabel\":\"createTime\",\"DefaultUpdatedAtLabel\":\"updateTime\",\"IgnoreTablePrefix\":\"u_,base_\"}','代码生成成功'),
+	(2,'2021-09-12 14:50:05.214990','2021-09-12 14:50:05.214990','d','d','demo_go','{\"Title\":\"d\",\"Description\":\"d\",\"ActiveCode\":\"*****\",\"TableNames\":\"demo_go\",\"ServerGenPath\":\"/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GfEasy/\",\"AdminGenPath\":\"/Users/yons/Documents/develop/go/src/gitee.com/jasonLaw1015/GfEasyAdmin/\",\"DbHost\":\"127.0.0.1\",\"DbPort\":\"3306\",\"DbUser\":\"root\",\"DbPass\":\"123456\",\"DbName\":\"gf-easy\",\"DbType\":\"mysql\",\"DefaultCreatedAtLabel\":\"createTime\",\"DefaultUpdatedAtLabel\":\"updateTime\",\"IgnoreTablePrefix\":\"u_,base_\"}','代码生成成功');
 
 /*!40000 ALTER TABLE `gen_code_log` ENABLE KEYS */;
 UNLOCK TABLES;

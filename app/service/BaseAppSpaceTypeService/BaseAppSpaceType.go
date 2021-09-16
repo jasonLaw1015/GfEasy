@@ -4,7 +4,7 @@
 package BaseAppSpaceTypeService
 
 import (
-	"goEasy/app/model/BaseAppSpaceTypeModel"
+	"gfEasy/app/model/BaseAppSpaceTypeModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

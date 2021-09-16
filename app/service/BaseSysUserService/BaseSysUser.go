@@ -4,11 +4,11 @@
 package BaseSysUserService
 
 import (
+	"gfEasy/app/model/BaseSysUserModel"
+	"gfEasy/app/model/BaseSysUserRoleModel"
 	"github.com/gogf/gf/container/garray"
 	"github.com/gogf/gf/crypto/gmd5"
 	"github.com/gogf/gf/util/grand"
-	"goEasy/app/model/BaseSysUserModel"
-	"goEasy/app/model/BaseSysUserRoleModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

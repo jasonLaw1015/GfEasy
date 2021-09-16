@@ -4,7 +4,7 @@
 package BaseSysUserRoleService
 
 import (
-	"goEasy/app/model/BaseSysUserRoleModel"
+	"gfEasy/app/model/BaseSysUserRoleModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

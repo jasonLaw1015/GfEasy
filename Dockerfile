@@ -1,4 +1,4 @@
-# gf docker -t goEasy
+# gf docker -t gfEasy
 FROM loads/alpine:3.8
 
 LABEL maintainer="john@goframe.org"
@@ -8,7 +8,7 @@ LABEL maintainer="john@goframe.org"
 ###############################################################################
 
 # 设置固定的项目路径
-ENV WORKDIR /var/www/goEasy
+ENV WORKDIR /var/www/gfEasy
 
 # 添加应用可执行文件，并设置执行权限
 ADD ./bin/linux_amd64/main   $WORKDIR/main

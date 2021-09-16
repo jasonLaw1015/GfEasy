@@ -4,7 +4,7 @@
 package BaseSysParamService
 
 import (
-	"goEasy/app/model/BaseSysParamModel"
+	"gfEasy/app/model/BaseSysParamModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

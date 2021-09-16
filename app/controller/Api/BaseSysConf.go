@@ -4,9 +4,9 @@
 package Api
 
 import (
-	"goEasy/app/model/BaseSysConfModel"
-	"goEasy/app/service/BaseSysConfService"
-	"goEasy/library/response"
+	"gfEasy/app/model/BaseSysConfModel"
+	"gfEasy/app/service/BaseSysConfService"
+	"gfEasy/library/response"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

@@ -4,7 +4,7 @@
 package BaseSysRoleDepartmentService
 
 import (
-	"goEasy/app/model/BaseSysRoleDepartmentModel"
+	"gfEasy/app/model/BaseSysRoleDepartmentModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"

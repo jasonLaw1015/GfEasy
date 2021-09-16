@@ -4,9 +4,9 @@
 package Admin
 
 import (
-	"goEasy/app/model/BaseSysUserModel"
-	"goEasy/app/service/BaseSysUserService"
-	"goEasy/library/response"
+	"gfEasy/app/model/BaseSysUserModel"
+	"gfEasy/app/service/BaseSysUserService"
+	"gfEasy/library/response"
 
 	"github.com/gogf/gf/frame/g"
 	"github.com/gogf/gf/net/ghttp"

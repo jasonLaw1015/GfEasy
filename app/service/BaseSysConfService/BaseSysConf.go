@@ -4,7 +4,7 @@
 package BaseSysConfService
 
 import (
-	"goEasy/app/model/BaseSysConfModel"
+	"gfEasy/app/model/BaseSysConfModel"
 
 	"github.com/gogf/gf/errors/gerror"
 	"github.com/gogf/gf/frame/g"
