@@ -124,14 +124,19 @@ gf build
 一般选择amd64。你可以运行go env 查看到你本机是哪个，自己选择那个
 
 darwin=>mac
+
 linux=>linux
+
 windows=>windows
 
+------
 ## 后台前端Vue
 
-***必须安装：
+**必须安装：**
+
 操作系统上安装了 Node.js（> = 12.1.0）、@vue/cli。
-我用的是node 14.17.6
+
+我用的是node 是14.17.6
 
 ---
 
@@ -239,7 +244,14 @@ arm 这种架构一般用于嵌入式开发。 比如 Android ， IOS ， Win mo
 
 然后按步骤123，配置相关参数
 步骤1：配置所需要环境参数
+-----
+**注意：**
+下图的生成代码目录的是mac端的，
+windows端要写成\，反斜杠。
 
+如：D:\develop\go\src\gitee.com\jasonLaw1015\GfEasyAdmin\
+
+-------
 ![img.png](screenshot/screenshot2/代码生成配置1.png)
 
 步骤2：检测下步骤1的数据是否可行
