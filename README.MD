@@ -130,7 +130,8 @@ windows=>windows
 ## 后台前端Vue
 
 ***必须安装：
-操作系统上安装了 Node.js（> = 8.9.0）、@vue/cli
+操作系统上安装了 Node.js（> = 12.1.0）、@vue/cli。
+我用的是node 14.17.6
 
 ---
 
