@@ -23,6 +23,7 @@ type Entity struct {
 	Sort           int         `orm:"sort" json:"sort"`                     // 排序
 	OtherStr       string      `orm:"otherStr" json:"otherStr"`             // 其他状态2#s1:已激活,s2a2:未激活#IsDictColumn,IsSearchParams
 	AppGoodsInfoId int         `orm:"appGoodsInfoId" json:"appGoodsInfoId"` // appGoodsInfoID
+	TestName       string      `orm:"testName" json:"testName"`             // 组名
 }
 
 var (
@@ -70,6 +71,7 @@ type AddReqParams struct {
 	Sort           int    `p:"sort" v:"required#排序不能为空"`
 	OtherStr       string `p:"otherStr" v:"required#其他状态2#s1:已激活,s2a2:未激活#IsDictColumn,IsSearchParams不能为空"`
 	AppGoodsInfoId int    `p:"appGoodsInfoId" v:"required#appGoodsInfoID不能为空"`
+	TestName       string `p:"testName" `
 }
 type UpdateReqParams struct {
 	Id             int    `p:"id" v:"required#ID不能为空"`
@@ -83,6 +85,7 @@ type UpdateReqParams struct {
 	Sort           int    `p:"sort" `
 	OtherStr       string `p:"otherStr" `
 	AppGoodsInfoId int    `p:"appGoodsInfoId" `
+	TestName       string `p:"testName" `
 }
 type InfoReqParams struct {
 	Id int `p:"id" v:"required#id不能为空"`

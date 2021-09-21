@@ -31,6 +31,26 @@
 
 ![GfEasy-移动.png](screenshot/GfEasy-移动.png)
 
+# 地址
+## 后端：
+
+https://github.com/jasonLaw1015/GfEasy
+
+或者
+
+https://gitee.com/jasonlaw1015/GfEasy
+
+
+## 后台前端：
+
+https://github.com/jasonLaw1015/GfEasyAdmin
+
+或者
+
+https://gitee.com/jasonlaw1015/GfEasyAdmin
+
+
+
 # 一、快速开始
 
 ### Go环境安装，请参考
