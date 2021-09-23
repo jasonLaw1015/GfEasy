@@ -31,6 +31,8 @@
 
 ![GfEasy-移动.png](screenshot/GfEasy-移动.png)
 
+-------
+
 # 地址
 ## 后端：
 
@@ -40,6 +42,7 @@ https://github.com/jasonLaw1015/GfEasy
 
 https://gitee.com/jasonlaw1015/GfEasy
 
+--------
 
 ## 后台前端：
 
@@ -52,6 +55,8 @@ https://gitee.com/jasonlaw1015/GfEasyAdmin
 
 
 # 一、快速开始
+
+------
 
 ### Go环境安装，请参考
 
@@ -98,9 +103,22 @@ go run main.go
 
 ![img_8.png](screenshot/img_8.png)
 
+
+----
+
 ### 安装gf开发工具
 
 https://goframe.org/pages/viewpage.action?pageId=1115782
+
+------
+
+### 生成接口文档
+
+```shell
+gf swagger --pack
+```
+
+--------
 
 #### 交叉编译
 
@@ -111,6 +129,8 @@ gf build main.go -n my-app -v 1.0 -a amd64 -s linux -p ./
 ```
 
 会得到个my-app可执行文件
+
+----------
 
 #### 也可以配置gfcli.build
 
@@ -224,6 +244,10 @@ yarn build
 
 账号密码：admin/123456
 
+-----
+
+拥有基于角色的权限控制模型RBAC
+
 ![img.png](screenshot/screenshot2/img.png)
 
 ![img_4.png](screenshot/screenshot2/img_4.png)
@@ -266,6 +290,9 @@ arm 这种架构一般用于嵌入式开发。 比如 Android ， IOS ， Win mo
 步骤1：配置所需要环境参数
 -----
 **注意：**
+
+必须在有网地方使用
+
 下图的生成代码目录的是mac端的，
 windows端要写成\，反斜杠。
 
@@ -346,6 +373,9 @@ CREATE TABLE `demo_go` (
 代码生成器会自动判断字段类型，生成对应的go类型，生成对应的结构体，如下
 ![img.png](screenshot/img1.png)
 
+
+---------
+
 ### go端：
 
 
@@ -356,13 +386,20 @@ CREATE TABLE `demo_go` (
 | DATETIME       | *gtime.Time |
 | ...            | ...         |
 
+--------
+
 ### vue端：
 
 会判断字段，然后确认其使用哪个前端组件来处理该字段。
 
 如：el-input、el-input-number、el-radio-group、cl-upload-space-preview
 
+
+---------
+
 ## 2.1、定义表字段规则：
+
+--------
 
 ### 默认规则：
 
@@ -398,6 +435,8 @@ types status
 
 7.外键名要写全且是小驼峰。如base_a、base_b，a表和b表关联的话。b表中外键字段名必须为baseAId。否则前端ui的select组件不生效
 
+-------
+
 ### 指定规则：
 
 **有些数据库设计，有时我不想使用上述提供的字段名。为提高灵活性，特意提供了指定标识，
@@ -416,6 +455,9 @@ types status
 
 **特别提醒：尽量不要用type来做字段名，否则生成的go代码有可能会出问题。因为type是go语法的关键字。目前我是用types代替。其他go关键字也是如此**
 
+
+-------
+
 ## 2.2、定时任务的使用：
 
 新增定时任务逻辑
@@ -430,6 +472,8 @@ types status
 在service就可以看到刚刚写的GoodsTask。
 
 只要在package Task下写方法都可以在这里选择使用
+
+--------
 
 # 三、采用技术的相关使用文档
 
